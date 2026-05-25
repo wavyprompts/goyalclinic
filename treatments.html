@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treatments | Goyal Dental Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+        <section class="hero-section">
+            <div class="fluid-shape shape-1"></div>
+
+            <header class="header">
+                <a href="index.html" class="brand"><i class="ph-fill ph-circles-three-plus"
+                        style="color: var(--color-accent);"></i> Goyal Dental</a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="treatments.html" class="nav-link">Treatments</a>
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="contact.html" class="btn btn-dark mobile-menu-cta">Book Appointment</a>
+                </nav>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="contact.html" class="btn btn-dark header-cta">
+                        <span class="desktop-text">Book Appointment</span>
+                        <span class="mobile-text">Book Now</span>
+                    </a>
+                    <button class="mobile-menu-btn"
+                        onclick="document.querySelector('.nav-menu').classList.toggle('active')"
+                        aria-label="Toggle Menu">
+                        <i class="ph-bold ph-list"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="hero-content">
+                <h1 class="hero-title" style="font-size: 3rem;">Clinical Procedures</h1>
+                <p style="font-size: 1.2rem; color: #4B5563; margin-top: 1rem;">Comprehensive care using the latest
+                    global standards.</p>
+            </div>
+        </section>
+
+        <section class="bento-section">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">Specialized Treatments</h2>
+            <div class="bento-grid" style="grid-template-columns: repeat(2, 1fr); height: auto; margin-bottom: 4rem;">
+
+                <!-- Treatment 1 -->
+                <div class="bento-card"
+                    style="background: white; border: 1px solid #eee; overflow: hidden; padding: 0;">
+                    <img src="assets/treat_implant.jpg" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <div
+                            style="background: #E0F2FE; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-card-blue); margin-bottom: 1.5rem;">
+                            <i class="ph-fill ph-plant" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h3>Dental Implants</h3>
+                        <p style="color: #6B7280; margin-top: 0.5rem; line-height: 1.6;">
+                            Permanent replacement for missing teeth using biocompatible titanium roots. Lifetime
+                            warranty included.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Treatment 2 -->
+                <div class="bento-card"
+                    style="background: white; border: 1px solid #eee; overflow: hidden; padding: 0;">
+                    <img src="assets/treat_whitening.jpg" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <div
+                            style="background: #F3E8FF; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #9333EA; margin-bottom: 1.5rem;">
+                            <i class="ph-fill ph-sparkle" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h3>Cosmetic Whitening</h3>
+                        <p style="color: #6B7280; margin-top: 0.5rem; line-height: 1.6;">
+                            Professional chair-side whitening to lift stains and brighten your smile up to 8 shades in
+                            just 45 minutes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Treatment 3 -->
+                <div class="bento-card"
+                    style="background: white; border: 1px solid #eee; overflow: hidden; padding: 0;">
+                    <img src="assets/treat_aligner.jpg" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <div
+                            style="background: #DCFCE7; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #16A34A; margin-bottom: 1.5rem;">
+                            <i class="ph-fill ph-smiley" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h3>Invisible Aligners</h3>
+                        <p style="color: #6B7280; margin-top: 0.5rem; line-height: 1.6;">
+                            Straighten your teeth discreetly with custom-made clear aligners. No wires, no brackets,
+                            just results.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Treatment 4 -->
+                <div class="bento-card"
+                    style="background: white; border: 1px solid #eee; overflow: hidden; padding: 0;">
+                    <img src="assets/treat_rct.jpg" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <div
+                            style="background: #FFEDD5; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #F97316; margin-bottom: 1.5rem;">
+                            <i class="ph-fill ph-heart-beat" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h3>Root Canal Treatment</h3>
+                        <p style="color: #6B7280; margin-top: 0.5rem; line-height: 1.6;">
+                            Advanced rotary endodontics for pain-free single-sitting root canal procedures to save your
+                            natural tooth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">General Dentistry</h2>
+            <div class="bento-grid" style="grid-template-columns: repeat(3, 1fr); height: auto;">
+                <div class="bento-card"
+                    style="background: white; border: 1px solid #eee; padding: 0; overflow: hidden;">
+                    <img src="assets/dental_tools.png" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h4><i class="ph-fill ph-tooth"></i> Checkups & Cleaning</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Regular scaling and polishing to
+                            prevent gum disease.</p>
+                    </div>
+                </div>
+                <div class="bento-card"
+                    style="background: white; border: 1px solid #eee; padding: 0; overflow: hidden;">
+                    <img src="assets/treat_kids.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h4><i class="ph-fill ph-baby"></i> Pediatric Dentistry</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Specialized gentle care for
+                            children's milk teeth.</p>
+                    </div>
+                </div>
+                <div class="bento-card"
+                    style="background: white; border: 1px solid #eee; padding: 0; overflow: hidden;">
+                    <img src="assets/treat_crown.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h4><i class="ph-fill ph-shield-plus"></i> Crowns & Bridges</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Zirconia and metal-free ceramic
+                            caps for strength.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

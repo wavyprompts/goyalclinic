@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goyal Dental Clinic | Advanced Care</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="fluid-shape shape-1"></div>
+            <div class="fluid-shape shape-2"></div>
+
+            <header class="header">
+                <a href="index.html" class="brand">
+                    <i class="ph-fill ph-circles-three-plus" style="color: var(--color-accent); font-size: 1.8rem;"></i>
+                    Goyal Dental
+                </a>
+
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="treatments.html" class="nav-link">Treatments</a>
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="contact.html" class="btn btn-dark mobile-menu-cta">Book Appointment</a>
+                </nav>
+
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="contact.html" class="btn btn-dark header-cta">
+                        <span class="desktop-text">Book Appointment</span>
+                        <span class="mobile-text">Book Now</span>
+                    </a>
+                    <button class="mobile-menu-btn"
+                        onclick="document.querySelector('.nav-menu').classList.toggle('active')"
+                        aria-label="Toggle Menu">
+                        <i class="ph-bold ph-list"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Your
+                    <span class="title-pill">
+                        <img src="assets/avatar3.png" alt="">
+                        <img src="assets/happy_patient.png" alt="">
+                        <div
+                            style="width: 32px; height: 32px; background: #1F2937; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; margin-left: -8px; border: 2px solid white; font-size: 14px;">
+                            +</div>
+                    </span>
+                    Partner for<br>
+                    Advanced Dental<br>
+                    Excellence
+                    <a href="contact.html" class="blue-pill-btn">
+                        Book Now <i class="ph-bold ph-arrow-up-right"></i>
+                    </a>
+                </h1>
+            </div>
+        </section>
+
+        <!-- Bento Grid Section -->
+        <section class="bento-section">
+            <div class="bento-grid">
+
+                <!-- Card 1: Tech/Blue -->
+                <div class="bento-card card-blue-tech">
+                    <div
+                        style="background: white; padding: 0.8rem; border-radius: 12px; width: fit-content; color: var(--color-card-blue);">
+                        <i class="ph-fill ph-sparkle-fill"></i>
+                    </div>
+
+                    <img src="assets/dental_chair.jpg" class="tech-img" alt="Advanced Dental Tech">
+
+                    <div style="position: relative; z-index: 2;">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem; max-width: 80%;">Digital Precision for a
+                            Perfect Smile.</h3>
+                        <p style="margin-bottom: 1.5rem; font-size: 1.1rem; opacity: 0.9; max-width: 90%;">Experience
+                            the future of dentistry with our AI-assisted diagnostics and 3D imaging technology.</p>
+
+                    </div>
+                </div>
+
+                <!-- Card 2: Stats -->
+                <div class="bento-card card-stats">
+                    <h2 style="font-size: 4rem; font-weight: 800; line-height: 1; color: var(--color-primary);">15+</h2>
+
+                    <div>
+                        <div class="title-pill"
+                            style="margin: 0; padding: 0.5rem 1rem; font-size: 1rem; margin-bottom: 0.5rem;">
+                            Years of
+                        </div>
+                        <div class="title-pill" style="margin: 0; padding: 0.5rem 1rem; font-size: 1rem;">
+                            Clinical Excellence
+                        </div>
+                        <p style="margin-top: 1.5rem; color: #4B5563;">Join over 5,000 satisfied patients who have
+                            entrusted their smiles to us.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Review -->
+                <div class="bento-card card-review">
+                    <img src="assets/doctor_modern.png"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;"
+                        alt="Dr. Goyal">
+
+                    <div style="position: relative; z-index: 1;">
+                        <div
+                            style="background: var(--color-accent); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-bottom: 1rem; cursor: pointer;">
+                            <i class="ph-fill ph-play"></i>
+                        </div>
+                        <div class="review-badge">
+                            <strong>Meet Dr. Rajeev Goyal</strong>
+                            <div style="font-size: 0.85rem; color: #666;">M.D.S (Orthodontics)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- New Section: Specialized Treatments Preview -->
+        <section class="section" style="padding: 4rem;">
+            <div style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 3rem;">
+                <div>
+                    <h2 style="font-size: 3rem; line-height: 1.1; margin-bottom: 0.5rem;">World Class<br>Treatments</h2>
+                    <p style="color: #6B7280; font-size: 1.1rem;">Expert care tailored to your unique needs.</p>
+                </div>
+                <a href="treatments.html" class="btn btn-dark">View All Services <i
+                        class="ph-bold ph-arrow-right"></i></a>
+            </div>
+
+            <div class="grid-4">
+                <a href="treatments.html" class="service-card">
+                    <div class="img-wrap">
+                        <img src="assets/treat_implant.jpg" alt="Implants">
+                    </div>
+                    <div class="service-info">
+                        <h3>Dental Implants</h3>
+                        <p>Permanent solutions for missing teeth.</p>
+                    </div>
+                </a>
+                <a href="treatments.html" class="service-card">
+                    <div class="img-wrap">
+                        <img src="assets/treat_whitening.jpg" alt="Whitening">
+                    </div>
+                    <div class="service-info">
+                        <h3>Teeth Whitening</h3>
+                        <p>Instant brightening for a dazzling smile.</p>
+                    </div>
+                </a>
+                <a href="treatments.html" class="service-card">
+                    <div class="img-wrap">
+                        <img src="assets/treat_aligner.jpg" alt="Aligners">
+                    </div>
+                    <div class="service-info">
+                        <h3>Clear Aligners</h3>
+                        <p>Invisible straightening for adults & teens.</p>
+                    </div>
+                </a>
+                <a href="treatments.html" class="service-card">
+                    <div class="img-wrap">
+                        <img src="assets/treat_rct.jpg" alt="Root Canal">
+                    </div>
+                    <div class="service-info">
+                        <h3>Root Canal</h3>
+                        <p>Painless preservation of natural teeth.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- New Section: Why Choose Us (Refined) -->
+        <section class="section bg-light" style="padding: 4rem; background: #F9FAFB; border-radius: 24px;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 3rem; margin-bottom: 1rem;">The Goyal Difference</h2>
+                <p style="font-size: 1.2rem; color: #4B5563;">We combine advanced technology with compassionate care to
+                    deliver the best dental experience in Agra.</p>
+            </div>
+
+            <div class="grid-3" style="margin-top: 2rem;">
+                <div class="bento-card" style="background: white; border: 1px solid #eee; padding: 2rem;">
+                    <div class="icon-box-sm">
+                        <i class="ph-fill ph-shield-check"></i>
+                    </div>
+                    <h3>Sterilization First</h3>
+                    <p style="color: #6B7280; margin-top: 0.5rem;">We follow strict 7-step sterilization protocols to
+                        ensure 100% safety for every patient.</p>
+                </div>
+                <div class="bento-card" style="background: white; border: 1px solid #eee; padding: 2rem;">
+                    <div class="icon-box-sm">
+                        <i class="ph-fill ph-clock"></i>
+                    </div>
+                    <h3>Zero Wait Time</h3>
+                    <p style="color: #6B7280; margin-top: 0.5rem;">We respect your time. Our appointment system ensures
+                        you are seen exactly when scheduled.</p>
+                </div>
+                <div class="bento-card" style="background: white; border: 1px solid #eee; padding: 2rem;">
+                    <div class="icon-box-sm">
+                        <i class="ph-fill ph-hand-heart"></i>
+                    </div>
+                    <h3>Painless Dentistry</h3>
+                    <p style="color: #6B7280; margin-top: 0.5rem;">Advanced anesthesia techniques and gentle handling
+                        make your visit comfortable and anxiety-free.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="about.html" class="btn btn-dark">Learn More About Us</a>
+            </div>
+        </section>
+
+        <!-- New Section: Testimonial Highlight -->
+        <section class="section" style="padding: 4rem;">
+            <div class="bento-grid" style="grid-template-columns: 1fr 1fr; height: auto; align-items: center;">
+                <div style="padding-right: 2rem;">
+                    <div class="title-pill"
+                        style="margin: 0; background: #E0F2FE; color: var(--color-accent); margin-bottom: 1rem;">Patient
+                        Stories</div>
+                    <h2 style="font-size: 3rem; line-height: 1.1; margin-bottom: 1.5rem;">Loved by 5,000+<br>Happy
+                        Smiles</h2>
+                    <p style="font-size: 1.2rem; color: #4B5563; margin-bottom: 2rem;">Don't just take our word for it.
+                        Hear what our patients have to say about their experience at Goyal Dental Clinic.</p>
+                    <a href="testimonials.html" class="btn btn-dark">Read All Reviews</a>
+                </div>
+
+                <div class="bento-card" style="background: white; border: 1px solid #eee; position: relative;">
+                    <i class="ph-fill ph-quotes"
+                        style="font-size: 3rem; color: #E5E7EB; position: absolute; top: 2rem; right: 2rem;"></i>
+                    <div style="margin-bottom: 1rem; color: #FBBF24; font-size: 1.2rem;">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p style="font-size: 1.25rem; line-height: 1.6; color: #111827; margin-bottom: 1.5rem;">
+                        "Dr. Goyal is amazing. I got my dental implants done here and the process was completely
+                        painless. The technology they use is very advanced."
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div
+                            style="width: 48px; height: 48px; background: #F3F4F6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--color-accent);">
+                            SJ</div>
+                        <div>
+                            <strong style="display: block;">Sarah Jenkins</strong>
+                            <span style="font-size: 0.9rem; color: #6B7280;">Implants Patient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="simple-footer">
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding-bottom: 2rem; border-bottom: 1px solid #eee; margin-bottom: 2rem;">
+                <a href="index.html" class="brand"><i class="ph-fill ph-circles-three-plus"
+                        style="color: var(--color-accent);"></i> Goyal Dental</a>
+                <nav style="display: flex; gap: 2rem;">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="treatments.html">Treatments</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            © 2026 Goyal Dental Clinic. Excellence in Dentistry.
+        </footer>
+
+    </div>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

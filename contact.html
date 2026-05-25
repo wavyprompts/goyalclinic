@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Goyal Dental Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <section class="hero-section">
+            <div class="fluid-shape shape-1"></div>
+            <header class="header">
+                <a href="index.html" class="brand"><i class="ph-fill ph-circles-three-plus"
+                        style="color: var(--color-accent);"></i> Goyal Dental</a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="treatments.html" class="nav-link">Treatments</a>
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="contact.html" class="btn btn-dark mobile-menu-cta">Book Appointment</a>
+                </nav>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="contact.html" class="btn btn-dark header-cta">
+                        <span class="desktop-text">Book Appointment</span>
+                        <span class="mobile-text">Book Now</span>
+                    </a>
+                    <button class="mobile-menu-btn"
+                        onclick="document.querySelector('.nav-menu').classList.toggle('active')"
+                        aria-label="Toggle Menu">
+                        <i class="ph-bold ph-list"></i>
+                    </button>
+                </div>
+            </header>
+            <div class="hero-content">
+                <h1 class="hero-title" style="font-size: 3rem;">Book Your Visit</h1>
+            </div>
+        </section>
+
+        <section class="bento-section">
+            <div class="bento-grid" style="grid-template-columns: 1fr 1fr; height: auto;">
+                <div class="bento-card card-blue-tech">
+                    <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                        <div>
+                            <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Get in Touch</h2>
+                            <p style="font-size: 1.1rem; opacity: 0.8; margin-bottom: 3rem; max-width: 90%;">We're here
+                                to help you achieve the perfect smile. Reach out to us for any queries or to book an
+                                appointment.</p>
+
+                            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                    <div
+                                        style="background: rgba(255,255,255,0.15); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="ph-fill ph-map-pin" style="font-size: 1.5rem;"></i>
+                                    </div>
+                                    <div>
+                                        <strong
+                                            style="display: block; opacity: 0.7; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.3rem;">Address</strong>
+                                        <p style="font-size: 1.15rem; line-height: 1.5; opacity: 0.95;">123, MG Road
+                                            Axis,<br>Agra, Uttar Pradesh 282001</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                    <div
+                                        style="background: rgba(255,255,255,0.15); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="ph-fill ph-phone" style="font-size: 1.5rem;"></i>
+                                    </div>
+                                    <div>
+                                        <strong
+                                            style="display: block; opacity: 0.7; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.3rem;">Phone</strong>
+                                        <p style="font-size: 1.15rem; opacity: 0.95;">+91 999 999 9999</p>
+                                        <p style="font-size: 1.15rem; opacity: 0.95;">+91 888 888 8888</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                                    <div
+                                        style="background: rgba(255,255,255,0.15); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="ph-fill ph-clock" style="font-size: 1.5rem;"></i>
+                                    </div>
+                                    <div>
+                                        <strong
+                                            style="display: block; opacity: 0.7; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.3rem;">Hours</strong>
+                                        <p style="font-size: 1.15rem; opacity: 0.95;">Mon - Sat: 10:00 AM - 8:00 PM</p>
+                                        <p style="font-size: 1.15rem; opacity: 0.95;">Sunday: 10:00 AM - 2:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card"
+                    style="background: white; border: 1px solid #E5E7EB; display: flex; flex-direction: column;">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Request Appointment</h3>
+                    <p style="color: #6B7280; margin-bottom: 2rem;">Fill out the form below and we'll confirm your slot
+                        shortly.</p>
+
+                    <form id="appointment-form" style="display: flex; flex-direction: column; gap: 1.25rem; flex-grow: 1;">
+                        <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <label
+                                    style="display: block; font-size: 0.9rem; font-weight: 600; color: #374151; margin-bottom: 0.5rem;">Full
+                                    Name</label>
+                                <input type="text" id="patient-name" placeholder="John Doe" required
+                                    style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #D1D5DB; background: #F9FAFB; font-family: inherit; font-size: 1rem; outline: none;">
+                            </div>
+                            <div>
+                                <label
+                                    style="display: block; font-size: 0.9rem; font-weight: 600; color: #374151; margin-bottom: 0.5rem;">Phone
+                                    Number</label>
+                                <input type="tel" id="patient-phone" placeholder="+91 999 999 9999" required
+                                    style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #D1D5DB; background: #F9FAFB; font-family: inherit; font-size: 1rem; outline: none;">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label
+                                style="display: block; font-size: 0.9rem; font-weight: 600; color: #374151; margin-bottom: 0.5rem;">Treatment
+                                Interest</label>
+                            <select id="treatment-interest"
+                                style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #D1D5DB; background: #F9FAFB; color: #4B5563; font-family: inherit; font-size: 1rem; outline: none; cursor: pointer;">
+                                <option>General Consultation</option>
+                                <option>Dental Implants</option>
+                                <option>Clear Aligners / Braces</option>
+                                <option>Teeth Whitening</option>
+                                <option>Root Canal Treatment</option>
+                                <option>Other Enquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label
+                                style="display: block; font-size: 0.9rem; font-weight: 600; color: #374151; margin-bottom: 0.5rem;">Preferred
+                                Date</label>
+                            <input type="date" id="preferred-date" required
+                                style="width: 100%; padding: 1rem; border-radius: 12px; border: 1px solid #D1D5DB; background: #F9FAFB; font-family: inherit; font-size: 1rem; outline: none; color: #4B5563;">
+                        </div>
+
+                        <button type="submit" class="btn btn-dark"
+                            style="justify-content: center; padding: 1.25rem; font-size: 1.1rem; margin-top: auto;">Secure
+                            Appointment Booking <i class="ph-bold ph-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

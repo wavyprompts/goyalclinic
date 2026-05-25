@@ -1,0 +1,645 @@
+/* Global Design Tokens (V5 - Nexus Fluid Tech) */
+:root {
+    /* Colors */
+    --color-bg-app: #F3F4F6;
+    /* Light gray outer background */
+    --color-bg-container: #FFFFFF;
+    --color-primary: #111827;
+    /* Black/Dark Charcoal */
+    --color-accent: #3B82F6;
+    /* Electric Blue */
+    --color-gradient-hero: linear-gradient(135deg, #E0F2FE 0%, #E8F0FE 50%, #F5F3FF 100%);
+    --color-card-blue: #2563EB;
+
+    /* Typography */
+    --font-main: 'Plus Jakarta Sans', sans-serif;
+
+    /* Spacing & Layout */
+    --radius-outer: 40px;
+    --radius-inner: 24px;
+    --radius-pill: 999px;
+    --container-max: 1600px;
+
+    /* Animation */
+    --transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg-app);
+    color: var(--color-primary);
+    padding: 1.5rem;
+    /* Outer padding for the 'app' look */
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+/* Main App Wrapper */
+.app-wrapper {
+    background: var(--color-bg-container);
+    border-radius: var(--radius-outer);
+    min-height: calc(100vh - 3rem);
+    position: relative;
+    overflow-x: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.03);
+}
+
+/* Hero Section with Fluid Background */
+.hero-section {
+    position: relative;
+    padding: 2rem 4rem 6rem 4rem;
+    background: var(--color-gradient-hero);
+    border-radius: var(--radius-outer) var(--radius-outer) 0 0;
+    overflow: visible;
+}
+
+/* Abstract Fluid Shapes */
+.fluid-shape {
+    position: absolute;
+    filter: blur(80px);
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.shape-1 {
+    top: -10%;
+    left: -10%;
+    width: 60%;
+    height: 80%;
+    background: radial-gradient(circle, #60A5FA 0%, transparent 70%);
+}
+
+.shape-2 {
+    bottom: -20%;
+    right: -10%;
+    width: 70%;
+    height: 80%;
+    background: radial-gradient(circle, #A78BFA 0%, transparent 70%);
+}
+
+/* Header */
+.header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 4rem;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 3rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--color-accent);
+}
+
+/* Buttons */
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.btn-dark {
+    background: var(--color-primary);
+    color: white;
+}
+
+.btn-dark:hover {
+    transform: scale(1.05);
+    background: #000;
+}
+
+/* Header CTA */
+.header-cta .mobile-text {
+    display: none;
+}
+
+.mobile-menu-cta {
+    display: none !important;
+}
+
+.btn-accent {
+    background: var(--color-accent);
+    color: white;
+}
+
+.btn-accent:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 2rem;
+}
+
+/* Inline Pills in Title */
+.title-pill {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    padding: 0.2em 0.8em;
+    /* Adjusted padding */
+    border-radius: var(--radius-pill);
+    font-weight: 500;
+    font-size: 0.6em;
+    /* Scale down relative to H1 */
+    vertical-align: middle;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin: 0 0.2em;
+}
+
+.title-pill img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -8px;
+}
+
+.title-pill img:first-child {
+    margin-left: 0;
+}
+
+.blue-pill-btn {
+    background: var(--color-accent);
+    color: white;
+    padding: 0.4em 1em;
+    border-radius: var(--radius-pill);
+    font-size: 0.5em;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Bento Grid Section */
+.bento-section {
+    padding: 4rem 4rem;
+    background: var(--color-bg-container);
+    border-radius: var(--radius-inner) var(--radius-inner) 0 0;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 20;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2rem;
+    height: 500px;
+}
+
+.bento-card {
+    border-radius: var(--radius-inner);
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Specific Cards */
+.card-blue-tech {
+    background: #294E83;
+    color: white;
+    padding: 0;
+    /* Let image hit edges */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+    border-radius: var(--radius-inner);
+}
+
+.card-blue-tech>div:first-child {
+    /* Sparkle Icon */
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tech-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    opacity: 1;
+    mix-blend-mode: normal;
+    pointer-events: none;
+    filter: none;
+}
+
+/* Content Wrapper inside Card */
+.card-blue-tech>div:last-of-type {
+    padding: 1.5rem 2.5rem 2.5rem;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #294E83;
+    position: relative;
+    z-index: 2;
+    margin-top: -1px;
+    /* Avoid gap line */
+}
+
+
+
+.card-stats {
+    background: #E0F2FE;
+    /* Light Blue */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-review {
+    background: linear-gradient(to bottom, #F3F4F6, #E5E7EB);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.review-badge {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* Doctor Portrait Card */
+.doctor-card-img {
+    aspect-ratio: 3 / 4;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-inner);
+    width: 100%;
+}
+
+.doctor-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* New Section Grids */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.service-card {
+    display: block;
+    border-radius: var(--radius-inner);
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .img-wrap {
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+.service-card .service-info {
+    padding: 1.5rem;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.service-card p {
+    color: #6B7280;
+    font-size: 0.95rem;
+}
+
+.icon-box-sm {
+    width: 60px;
+    height: 60px;
+    background: #EFF6FF;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer (Simplified) */
+.simple-footer {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    color: #6B7280;
+    font-size: 0.9rem;
+    background: #FAFAFA;
+}
+
+/* Mobile & Tablet Optimization */
+@media (max-width: 1024px) {
+    body {
+        padding: 0;
+        /* Full width on mobile looks more app-like */
+    }
+
+    .app-wrapper {
+        border-radius: 0;
+        /* Remove rounded corners on mobile */
+        min-height: 100vh;
+    }
+
+    .hero-section {
+        padding: 1.5rem 1.25rem 3.5rem;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    /* Header Mobile Layout */
+    .header {
+        padding: 1rem 0;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 16px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        
+        /* Premium transition effect */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .mobile-menu-btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        background: rgba(17, 24, 39, 0.05);
+        color: var(--color-primary);
+        border: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        font-size: 1.4rem;
+        cursor: pointer;
+        transition: var(--transition);
+    }
+
+    .mobile-menu-btn:active {
+        transform: scale(0.9);
+        background: rgba(17, 24, 39, 0.1);
+    }
+
+    .btn-dark {
+        display: none;
+        /* Hide regular desktop dark buttons in header if not header-cta */
+    }
+
+    .header-cta {
+        display: none !important;
+        /* Hide header CTA button next to the hamburger menu on mobile */
+    }
+
+    /* Hero Typography & Pills */
+    .hero-title {
+        font-size: clamp(2rem, 7.5vw, 3.5rem);
+        margin-bottom: 2rem;
+        line-height: 1.25;
+    }
+
+    .title-pill {
+        font-size: 0.55em;
+        padding: 0.2em 0.6em;
+        margin: 0.1em 0.25em;
+        vertical-align: middle;
+    }
+
+    .title-pill img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .blue-pill-btn {
+        font-size: 0.45em;
+        padding: 0.5em 1em;
+        margin-left: 0.25rem;
+        margin-top: 0.5rem;
+        display: inline-flex;
+        vertical-align: middle;
+    }
+
+    /* Bento Grid Stack & Collapsing */
+    .bento-section {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr !important;
+        height: auto !important;
+        gap: 1.5rem !important;
+    }
+
+    .bento-card {
+        min-height: auto !important;
+        padding: 2rem 1.5rem !important;
+    }
+
+    /* Tech Card Adjustments */
+    .card-blue-tech {
+        height: auto !important;
+    }
+
+    .tech-img {
+        height: 220px !important;
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    .card-blue-tech>div:last-of-type {
+        padding: 1.5rem !important;
+        height: auto !important;
+    }
+
+    .card-blue-tech h3 {
+        font-size: 1.5rem !important;
+        max-width: 100% !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .card-blue-tech p {
+        max-width: 100% !important;
+        margin-bottom: 1rem !important;
+    }
+
+    /* New Sections */
+    .section {
+        padding: 3rem 1.25rem !important;
+    }
+
+    .grid-3,
+    .grid-4,
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    .service-card .img-wrap {
+        height: 180px;
+    }
+
+    /* Elevate hero section stack height when mobile menu is open to prevent bento overlap clipping */
+    .hero-section:has(.nav-menu.active) {
+        z-index: 100 !important;
+    }
+
+    /* Doctor Card Review on Home Page Mobile */
+    .card-review {
+        aspect-ratio: 3 / 4 !important;
+        height: auto !important;
+        min-height: 380px !important;
+        position: relative !important;
+    }
+
+    /* Mobile Menu CTA inside dropdown */
+    .mobile-menu-cta {
+        display: inline-flex !important;
+        margin-top: 1rem !important;
+        justify-content: center !important;
+        width: 100% !important;
+        padding: 0.8rem 1.5rem !important;
+    }
+
+    /* Footer */
+    .simple-footer>div {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .simple-footer nav {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        align-items: center !important;
+    }
+}
+
+/* Base styles for the toggle button (desktop hidden) */
+.mobile-menu-btn {
+    display: none;
+}

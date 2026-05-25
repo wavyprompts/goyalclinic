@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Goyal Dental Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <section class="hero-section">
+            <div class="fluid-shape shape-2"></div>
+            <header class="header">
+                <a href="index.html" class="brand"><i class="ph-fill ph-circles-three-plus"
+                        style="color: var(--color-accent);"></i> Goyal Dental</a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="treatments.html" class="nav-link">Treatments</a>
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="contact.html" class="btn btn-dark mobile-menu-cta">Book Appointment</a>
+                </nav>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="contact.html" class="btn btn-dark header-cta">
+                        <span class="desktop-text">Book Appointment</span>
+                        <span class="mobile-text">Book Now</span>
+                    </a>
+                    <button class="mobile-menu-btn"
+                        onclick="document.querySelector('.nav-menu').classList.toggle('active')"
+                        aria-label="Toggle Menu">
+                        <i class="ph-bold ph-list"></i>
+                    </button>
+                </div>
+            </header>
+            <div class="hero-content">
+                <h1 class="hero-title" style="font-size: 3rem;">Our Philosophy</h1>
+                <p style="font-size: 1.2rem; color: #4B5563; margin-top: 1rem;">Where Science Meets Compassion.</p>
+            </div>
+        </section>
+
+        <section class="bento-section">
+            <div class="bento-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 4rem; height: auto;">
+                <div class="bento-card"
+                    style="background: white; display: flex; flex-direction: column; justify-content: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Dr. Rajeev Goyal</h2>
+                    <div class="title-pill"
+                        style="width: fit-content; margin-bottom: 1rem; border: 1px solid #eee; background: #F3F4F6;">
+                        M.D.S Orthodontics</div>
+                    <p style="color: #6B7280; font-size: 1.1rem; line-height: 1.8;">
+                        "At Goyal Dental Clinic, we believe dentistry is a blend of science and art. With over 15 years
+                        of experience, we strive to provide not just treatments, but lasting dental health. We utilize
+                        the highest standards of sterilization and the latest digital technology to ensure every patient
+                        walks out with a confident smile."
+                    </p>
+                    <ul style="margin-top: 1.5rem; list-style: none; color: #4B5563;">
+                        <li style="margin-bottom: 0.5rem; display: flex; gap: 0.5rem;"><i
+                                class="ph-fill ph-check-circle" style="color: var(--color-accent);"></i> Gold Medalist
+                            in Orthodontics</li>
+                        <li style="margin-bottom: 0.5rem; display: flex; gap: 0.5rem;"><i
+                                class="ph-fill ph-check-circle" style="color: var(--color-accent);"></i> Certified
+                            Implantologist</li>
+                        <li style="margin-bottom: 0.5rem; display: flex; gap: 0.5rem;"><i
+                                class="ph-fill ph-check-circle" style="color: var(--color-accent);"></i> Fellow of the
+                            International College of Dentists</li>
+                    </ul>
+                </div>
+                <div class="bento-card doctor-card-img" style="padding: 0;">
+                    <img src="assets/doctor_modern.png" alt="Dr. Goyal">
+                </div>
+            </div>
+
+            <!-- Clinic Features -->
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">Our Facility</h2>
+            <div class="bento-grid" style="grid-template-columns: repeat(2, 1fr); height: auto;">
+                <div class="bento-card" style="background: white; border: 1px solid #eee;">
+                    <img src="assets/clinic_interior.png"
+                        style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px; margin-bottom: 1.5rem;">
+                    <h3>Modern Infrastructure</h3>
+                    <p style="color: #6B7280; margin-top: 0.5rem;">
+                        Our clinic is designed to be a calming, stress-free environment. Equipped with ergonomic dental
+                        chairs, digital X-ray units (RVG), and intraoral cameras, we ensure accurate diagnosis and
+                        comfortable treatment.
+                    </p>
+                </div>
+                <div class="bento-card" style="background: white; border: 1px solid #eee;">
+                    <img src="assets/sterilization.png"
+                        style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px; margin-bottom: 1.5rem;">
+                    <h3>Strict Sterilization</h3>
+                    <p style="color: #6B7280; margin-top: 0.5rem;">
+                        Patient safety is our #1 priority. We use Class B Autoclaves for 100% sterilization of all
+                        instruments. All needles, syringes, and cups are single-use disposables to prevent any
+                        cross-contamination.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
